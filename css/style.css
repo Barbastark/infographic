@@ -1,0 +1,226 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers';
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Bangers', cursive;
+}
+.launch,
+.spaceheader {
+	text-align: center;
+	color: white;
+	position: relative;
+	font-size: 40px;
+	letter-spacing: 5px;
+
+}
+.launch {
+	top: 70vh;
+	z-index: 1000;
+}
+.spaceheader {margin-top: 40px;}
+.meadow {
+	background-color: lightblue;
+	overflow: hidden;
+}
+.space {
+	background-color: black;
+	overflow: hidden;
+}
+
+.spaceship {
+	width: 15%;
+	
+}
+.spaceship-launch {
+	width: 15%;
+	
+}
+.prelaunch {
+	width: 100%;
+}
+
+.postlaunch {
+	width: 60%;
+
+}
+
+#launchpad {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+}
+#launchpad img {
+	width: 100%;
+	height: 100vh;
+}
+#spaceship{
+	position: absolute;
+	left:40%;
+	bottom: 30px;
+}
+#cloud,
+#cloud1,
+#cloud2 {
+	position: absolute;
+	left: 0%;
+	animation-timing-function: linear;
+	
+}
+#cloud {
+	top: 10%;
+	animation-name: cloud1;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay:4s;
+	width:15%;
+	left:-15%;
+}
+#cloud1 {
+	top: 15%;
+	animation-name: cloud1;
+    animation-iteration-count: infinite;
+	animation-duration: 25s;
+	width: 15%;
+	
+}
+#cloud2 {
+	top: 12%;
+	animation-name: cloud2;
+    animation-iteration-count: infinite;
+	animation-duration: 30s;
+	width: 8%;
+	left: -8%;
+	animation-delay: 2s
+}
+h2 {
+	color: white;
+	font-size: 1em;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 4px;
+	margin-left: -4px;
+}
+#video-player{
+    border: 1px solid #1D740C;
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    border: 1px solid rgba(255,255,255,0.0);
+}
+iframe {
+	width: 100%;
+	height: 100%;
+	border:0;
+}
+
+#sun,
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter,
+#saturn,
+#uranus,
+#neptune,
+#pluto {
+	width: 5%;
+	position: absolute;
+	top: -250px;
+	text-align: center;
+}
+#sun:hover,
+#mercury:hover,
+#venus:hover,
+#earth:hover,
+#mars:hover,
+#jupiter:hover,
+#saturn:hover,
+#uranus:hover,
+#neptune:hover,
+#pluto:hover {
+	cursor: pointer;
+}
+#sun {
+	left: 3%;
+	position: absolute;
+	top:20px;
+	width: 5%;
+}
+
+#mercury {
+	left: 12%;
+}
+
+#venus {
+	left: 22%;
+}
+
+#earth {
+	left: 32%;
+}
+
+#mars {
+	left: 42%;
+}
+
+#jupiter {
+	left: 52%;
+}
+
+#saturn {
+	left: 58.5%;
+	width: 12.5%;
+}
+#uranus {
+	left: 72%;
+}
+
+#neptune {
+	left: 82%;
+}
+
+#pluto {
+	left: 92%;
+}
+
+@-webkit-keyframes cloud1 {
+    0%   {left:0%; }
+    
+    100% {left:90%;}
+}
+
+/* Standard syntax */
+@keyframes cloud1 {
+    0%   {left:-15%; }
+    
+    100% {left: 100%;}
+}
+
+@-webkit-keyframes cloud2 {
+    0%   {left:-8%; }
+    
+    100% {left:100%;}
+}
+
+/* Standard syntax */
+@keyframes cloud2 {
+    0%   {left:-8%; }
+    
+    100% {left:100%;}
+}
+
+@-webkit-keyframes cloud3 {
+    0%   {left:-40%; }
+    
+    100% {left:140%;}
+}
+
+/* Standard syntax */
+@keyframes cloud3 {
+    0%   {left:-40%; }
+    
+    100% {left:140%;}
+}
